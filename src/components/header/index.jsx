@@ -2,6 +2,15 @@ import React from "react";
 import logo from "../../assets/logo.svg";
 
 function Header() {
+  const handleLinkClick = (event, elementId) => {
+    event.preventDefault();
+    const element = document.getElementById(elementId);
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header>
       <div className="container">
@@ -13,13 +22,28 @@ function Header() {
             <nav>
               <ul className="nav-ul">
                 <li>
-                  <a href="#about">About</a>
+                  <a
+                    href="#about"
+                    onClick={(event) => handleLinkClick(event, "about")}
+                  >
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="#projects">Projects</a>
+                  <a
+                    href="#projects"
+                    onClick={(event) => handleLinkClick(event, "projects")}
+                  >
+                    Projects
+                  </a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a
+                    href="#contact"
+                    onClick={(event) => handleLinkClick(event, "contact")}
+                  >
+                    Contact
+                  </a>
                 </li>
               </ul>
             </nav>

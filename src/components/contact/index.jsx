@@ -14,7 +14,7 @@ function Contact() {
   };
 
   return (
-    <section className="final-section">
+    <section className="final-section" id="contact">
       <div className="container">
         <div className="contact-content">
           <h1>Contact</h1>
