@@ -8,7 +8,7 @@ function Skill() {
       if (window.innerWidth <= 768) {
         setScrollSpeed(0.7);
       } else {
-        setScrollSpeed(0.25);
+        setScrollSpeed(0.4);
       }
     };
 

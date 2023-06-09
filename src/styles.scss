@@ -106,11 +106,11 @@ body::-webkit-scrollbar-thumb {
 // -------------------- MAIN -------------------- //
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   position: relative;
   height: fit-content;
@@ -120,7 +120,7 @@ section {
 .header-fixed {
   position: fixed;
   width: 100%;
-  max-width: calc(1200px);
+  max-width: calc(1300px);
   top: 1rem;
 }
 
@@ -139,6 +139,7 @@ section {
   gap: 1.5rem;
   align-items: flex-end;
   padding-right: 2rem;
+  z-index: 999;
 
   & * {
     font-weight: 500;
@@ -182,7 +183,6 @@ section {
   margin-top: -4rem;
 
   & h1 {
-    font-family: "Big Shoulders Display";
     font-weight: 700;
     color: white;
     text-align: center;
@@ -277,6 +277,10 @@ section {
 
 // -------------------- PROJECTS -------------------- //
 
+#projects {
+  min-height: 80vh;
+}
+
 .projects-content {
   display: flex;
   flex-direction: column;
@@ -290,12 +294,28 @@ section {
 .projects-wrap {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.project-outer {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  transition: flex-grow 0.3s ease-in-out, flex-shrink 0.3s ease-in-out;
+
+  &:hover {
+    flex-grow: 1.5;
+  }
 }
 
 .project {
   height: 200px;
   width: 100%;
-  max-width: 360px;
   border: 1px solid $pink;
   border-radius: 1rem;
   padding: 1rem;
@@ -319,6 +339,73 @@ section {
   }
 }
 
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+
+  & h5 {
+    font-size: 19px;
+    font-family: "Big Shoulders Display";
+    letter-spacing: 0.2rem;
+  }
+  & p {
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+
+.project-link-div {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  & a {
+    color: $pink;
+  }
+}
+
+// -------------------- CONTACT -------------------- //
+
+.contact-content {
+  & p {
+    max-width: 500px;
+  }
+  & h1 {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.email-div {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: unset;
+  }
+}
+
+.final-section {
+  padding-top: 8rem;
+  min-height: 90vh;
+
+  //   media queries
+  @media (max-width: 768px) {
+    padding-top: 12rem;
+  }
+}
+
+.email {
+  background: linear-gradient(190deg, $pink, $pink, #ffe0af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // -------------------- Buttons -------------------- //
 button {
   border: none;
@@ -331,10 +418,16 @@ button {
   @extend button;
   padding: 1rem 4rem;
   background-color: transparent;
-  color: $main-light;
+  color: $background-color;
   font-weight: 500;
-  border: 1px solid $main-light;
-  //   background: linear-gradient(to right, $main-grey, $pink);
+  //   border: 1px solid $main-light;
+  background: linear-gradient(to right, $orange, $pink);
+}
+
+.cta-copy {
+  @extend button;
+  @extend .cta-main;
+  padding: 0.5rem 2rem;
 }
 
 .cta-disabled {

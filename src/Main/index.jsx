@@ -4,6 +4,7 @@ import VideoHero from "../components/hero";
 import Skill from "../components/skillSlide";
 import About from "../components/about";
 import Projects from "../components/projects";
+import Contact from "../components/contact";
 
 function Main({ videoRef }) {
   return (
@@ -13,6 +14,7 @@ function Main({ videoRef }) {
       <Skill />
       <About />
       <Projects />
+      <Contact />
     </main>
   );
 }
