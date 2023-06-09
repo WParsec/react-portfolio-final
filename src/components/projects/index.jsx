@@ -10,7 +10,7 @@ function Projects() {
       <div className="container">
         <div className="projects-content">
           <div className="h1-wrap">
-            <h1>Projects</h1>
+            <h1>Design & Dev Projects</h1>
           </div>
           <div className="projects-wrap">
             <div className="project-outer">
