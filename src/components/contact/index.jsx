@@ -31,6 +31,9 @@ function Contact() {
           </div>
         </div>
       </div>
+      <div className="copyright-div">
+        <p>© 2023 Tom Ertvaag</p>
+      </div>
     </section>
   );
 }

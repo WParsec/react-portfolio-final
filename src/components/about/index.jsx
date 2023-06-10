@@ -7,7 +7,6 @@ function About() {
     "portfolio sites",
     "music",
     "websites",
-    "branding",
   ];
 
   const [creations, setCreations] = useState("");

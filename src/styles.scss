@@ -29,6 +29,10 @@ body.modal-open {
   height: 100vh;
 }
 
+body {
+  background-color: $background-color;
+}
+
 main {
   z-index: 1;
   position: relative;
@@ -405,6 +409,14 @@ section {
   background: linear-gradient(190deg, $pink, $pink, #ffe0af);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.copyright-div {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1rem;
 }
 
 // -------------------- Buttons -------------------- //
