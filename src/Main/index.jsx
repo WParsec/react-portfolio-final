@@ -5,6 +5,7 @@ import Skill from "../components/skillSlide";
 import About from "../components/about";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
+import Icons from "../components/icons";
 
 function Main({ videoRef }) {
   return (
@@ -15,6 +16,7 @@ function Main({ videoRef }) {
       <About />
       <Projects />
       <Contact />
+      <Icons />
     </main>
   );
 }

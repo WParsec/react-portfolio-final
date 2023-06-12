@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import me from "../../assets/me.png";
+
 function About() {
   const creationsArray = [
     "web applications",
@@ -7,6 +9,7 @@ function About() {
     "portfolio sites",
     "music",
     "websites",
+    "good relationships",
   ];
 
   const [creations, setCreations] = useState("");
@@ -56,23 +59,30 @@ function About() {
   return (
     <section id="about">
       <div className="container">
-        <div className="about-content">
-          <div className="top">
-            <h1>
-              Hello There! I'm <span>Tom</span>
-            </h1>
-            <p>
-              And I love to create <span>{creations}</span>
-            </p>
+        <div className="about-flex">
+          <div className="about-content">
+            <div className="top">
+              <h1>
+                Hello There! I'm <span>Tom</span>
+              </h1>
+              <p>
+                And I love to create <span>{creations}</span>
+              </p>
+            </div>
+            <div className="bottom">
+              <p>
+                I am a Norwegian front-end developer and designer currently
+                based in Valencia, Spain. <br /> I aspire to combine my skills
+                in various art-forms to provide unique portfolio websites with X
+                factor. <br /> So you can showcase your art with{" "}
+                <span>style.</span>
+              </p>
+            </div>
           </div>
-          <div className="bottom">
-            <p>
-              I am a Norwegian front-end developer and designer currently based
-              in Valencia, Spain. <br /> I aspire to combine my skills in
-              various art-forms to provide unique portfolio websites with X
-              factor. <br /> So you can showcase your art with{" "}
-              <span>style.</span>
-            </p>
+          <div className="image-div">
+            <div className="image-wrap">
+              <img src={me} alt="me" />
+            </div>
           </div>
         </div>
       </div>

@@ -114,7 +114,7 @@ section {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   height: fit-content;
@@ -124,7 +124,7 @@ section {
 .header-fixed {
   position: fixed;
   width: 100%;
-  max-width: calc(1300px);
+  max-width: calc(1400px);
   top: 1rem;
   z-index: 999;
 }
@@ -277,6 +277,35 @@ section {
       font-family: "Qwigley";
       font-size: 32px;
     }
+  }
+}
+
+.about-flex {
+  display: flex;
+}
+
+.image-div {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.image-wrap {
+  height: 36rem;
+  margin-top: 16rem;
+
+  // Media Queries
+  @media (max-width: 768px) {
+    height: 20rem;
+    margin-top: 36rem;
+  }
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.2;
   }
 }
 

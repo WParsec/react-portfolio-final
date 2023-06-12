@@ -6,7 +6,7 @@ function Skill() {
   useEffect(() => {
     const handleSize = () => {
       if (window.innerWidth <= 768) {
-        setScrollSpeed(0.7);
+        setScrollSpeed(1);
       } else {
         setScrollSpeed(0.4);
       }
