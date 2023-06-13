@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import me from "../../assets/me-outline-white.png";
+import me from "../../assets/me-black-bg.png";
 
 function About() {
   const creationsArray = [
