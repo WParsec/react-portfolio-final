@@ -293,10 +293,7 @@ section {
   max-height: 40rem;
 
   @media (max-width: 768px) {
-    max-height: 30rem;
-  }
-  @media (max-width: 568px) {
-    max-height: 18rem;
+    max-height: 24rem;
   }
 
   & img {
@@ -305,6 +302,10 @@ section {
     object-fit: cover;
     object-position: center;
     opacity: 0.15;
+
+    @media (max-width: 768px) {
+      padding-top: 4rem;
+    }
   }
 }
 
