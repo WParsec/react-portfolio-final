@@ -116,7 +116,6 @@ section {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  position: relative;
   height: fit-content;
   padding: 0 1rem;
 }
@@ -243,6 +242,11 @@ section {
 
 // -------------------- ABOUT -------------------- //
 
+.about-container {
+  position: relative;
+  height: 100vh;
+}
+
 .top {
   padding: 8rem 0 0;
   & h1 {
@@ -280,24 +284,19 @@ section {
   }
 }
 
-.about-flex {
-  display: flex;
-}
-
 .image-div {
   position: absolute;
+  height: 100%;
   right: 0;
+  bottom: 0;
   z-index: -1;
-}
+  max-height: 40rem;
 
-.image-wrap {
-  height: 36rem;
-  margin-top: 16rem;
-
-  // Media Queries
   @media (max-width: 768px) {
-    height: 20rem;
-    margin-top: 36rem;
+    max-height: 30rem;
+  }
+  @media (max-width: 568px) {
+    max-height: 24rem;
   }
 
   & img {
@@ -305,7 +304,7 @@ section {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.2;
+    opacity: 0.15;
   }
 }
 

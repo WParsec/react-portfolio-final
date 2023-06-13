@@ -58,7 +58,7 @@ function About() {
 
   return (
     <section id="about">
-      <div className="container">
+      <div className="container about-container">
         <div className="about-flex">
           <div className="about-content">
             <div className="top">
@@ -79,11 +79,9 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="image-div">
-            <div className="image-wrap">
-              <img src={me} alt="me" />
-            </div>
-          </div>
+        </div>
+        <div className="image-div">
+          <img src={me} alt="me" />
         </div>
       </div>
     </section>
