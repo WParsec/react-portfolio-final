@@ -80,9 +80,10 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="image-div">
-          <img src={me} alt="me" />
-        </div>
+        <div
+          className="image-div"
+          style={{ backgroundImage: `url(${me})` }}
+        ></div>
       </div>
     </section>
   );
