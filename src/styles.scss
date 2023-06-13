@@ -245,6 +245,10 @@ section {
 .about-container {
   position: relative;
   height: 100vh;
+
+  @media (max-width: 668px) {
+    height: 960px;
+  }
 }
 
 .top {
@@ -290,9 +294,13 @@ section {
   right: 0;
   bottom: 0;
   z-index: -1;
-  max-height: 40rem;
+  max-height: 36rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
+    max-height: 30rem;
+  }
+
+  @media (max-width: 620px) {
     max-height: 24rem;
   }
 
@@ -431,6 +439,7 @@ section {
   //   media queries
   @media (max-width: 768px) {
     padding-top: 12rem;
+    min-height: 768px;
   }
 }
 
