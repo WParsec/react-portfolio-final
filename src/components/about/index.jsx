@@ -71,11 +71,13 @@ function About() {
             </div>
             <div className="bottom">
               <p>
-                I am a Norwegian front-end developer and designer currently
-                based in Valencia, Spain. <br /> I aspire to combine my skills
-                in various art-forms to provide unique portfolio websites with X
-                factor. <br /> So you can showcase your art with{" "}
-                <span>style.</span>
+                I am a Norwegian front-end developer and designer based in
+                Bergen. <br />
+                By combining my passion for visual esthetics, great user
+                experience and efficient code, I create website with X-factor
+                <br />
+                Whether you want a portfolio-page, an informative page for your
+                business or a blog for your cat, do it with <span>style.</span>
               </p>
             </div>
           </div>
