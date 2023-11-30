@@ -345,7 +345,7 @@ section {
   transition: flex-grow 0.3s ease-in-out, flex-shrink 0.3s ease-in-out;
 
   &:hover {
-    flex-grow: 1.5;
+    flex-grow: 1.8;
   }
 }
 
@@ -355,6 +355,10 @@ section {
   border: 1px solid $pink;
   border-radius: 1rem;
   padding: 1rem;
+
+  &:hover {
+    height: 400px;
+  }
 }
 
 .project-inner {

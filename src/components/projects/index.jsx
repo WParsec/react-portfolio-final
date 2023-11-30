@@ -2,7 +2,7 @@ import React from "react";
 
 import holidayz from "../../assets/Holidayz-screenshot.png";
 import gavelbay from "../../assets/gavelbay.png";
-import daily from "../../assets/reactEcom.png";
+import iris from "../../assets/instantiris.webp";
 
 function Projects() {
   return (
@@ -10,9 +10,29 @@ function Projects() {
       <div className="container">
         <div className="projects-content">
           <div className="h1-wrap">
-            <h1>Design & Dev Projects</h1>
+            <h1>Design {"&"} Dev Projects</h1>
           </div>
           <div className="projects-wrap">
+            <div className="project-outer">
+              <div className="project">
+                <div className="project-inner">
+                  <div className="project-img">
+                    <img src={iris} alt="project 1 img" />
+                  </div>
+                </div>
+              </div>
+              <div className="project-info">
+                <h5>Instantiris.no</h5>
+                <p>
+                  Over the course of a few months, I created the complete
+                  design, website and booking system of Instant Iris, an
+                  iris-photography company located in the center of Bergen.
+                </p>
+                <div className="project-link-div">
+                  <a href="https://instantiris.no">Live site</a>
+                </div>
+              </div>
+            </div>
             <div className="project-outer">
               <div className="project">
                 <div className="project-inner">
@@ -60,26 +80,6 @@ function Projects() {
                   <a href="https://wparsec.github.io/Semester-Project-2/">
                     Live site
                   </a>
-                </div>
-              </div>
-            </div>
-            <div className="project-outer">
-              <div className="project">
-                <div className="project-inner">
-                  <div className="project-img">
-                    <img src={daily} alt="project 3 img" />
-                  </div>
-                </div>
-              </div>
-              <div className="project-info">
-                <h5>React eCom Project | Daily</h5>
-                <p>
-                  My first React Project at Noroff Frontend Studies. The project
-                  was ungraded, but received excellent feedback.
-                </p>
-                <div className="project-link-div">
-                  <a href="https://github.com/WParsec/React-eCom">Github</a> |
-                  <a href="https://wparsec.github.io/React-eCom">Live site</a>
                 </div>
               </div>
             </div>
