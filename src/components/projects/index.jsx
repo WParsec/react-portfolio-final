@@ -1,6 +1,6 @@
 import React from "react";
 
-import holidayz from "../../assets/Holidayz-screenshot.png";
+import holidayz from "../../assets/holidayz.webp";
 import cabanyal from "../../assets/cabanyal.webp";
 import iris from "../../assets/instantiris.webp";
 
