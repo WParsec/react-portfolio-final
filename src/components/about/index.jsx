@@ -74,11 +74,11 @@ function About() {
                 I am a Norwegian front-end developer and designer based in
                 Bergen. <br />
                 By combining my passion for visual esthetics, great user
-                experience and efficient code, I create website with X-factor -
-                from start to finish.
-                <br />
+                experience and efficient code, I create great websites and
+                softwares - from start to finish
+                {/* <br />
                 Whether you want a portfolio-page, an informative page for your
-                business or a blog for your cat, do it with <span>style.</span>
+                business or a blog for your cat, do it with <span>style.</span> */}
               </p>
             </div>
           </div>
